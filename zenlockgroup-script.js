@@ -1,4 +1,4 @@
- <script>
+<script>
   const sections = document.querySelectorAll('.animate-fade');
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
