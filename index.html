@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ZenLockGroup</title>
+  <meta name="description" content="ZenLockGroup: Strategic Thinking. Intelligent Results."/>
+  <meta name="theme-color" content="#6366F1"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; }
+    .animate-fade { opacity: 0; transform: translateY(20px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
+    .animate-fade.visible { opacity: 1; transform: translateY(0); }
+    .faq-slide {
+      width: 310px;
+      height: 310px;
+      flex-shrink: 0;
+      background-color: #F1F5F9;
+      margin-right: 1.5rem;
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.06);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .faq-slide h3 {
+      font-weight: 700;
+      color: #1E293B;
+      font-size: 1.125rem;
+      margin-bottom: 0.5rem;
+    }
+    .hide-scrollbar::-webkit-scrollbar { display: none; }
+    .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+</head>
+<body class="bg-white text-neutral-900">
+
+<!-- Hero -->
+<section class="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-black text-white flex items-center justify-center text-center px-6">
+  <div class="max-w-3xl mx-auto">
+    <h1 class="text-5xl font-extrabold tracking-tight mb-6" id="typed-text"></h1>
+    <p class="text-lg text-gray-300">ZenLockGroup powers digital strategies, results, and platform-led growth for next-gen organizations.</p>
+  </div>
+</section>
+
+<!-- Services -->
+<section class="animate-fade py-24 px-6 bg-[#F9FAFB] text-center" id="services">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-4xl font-bold tracking-tight mb-12">Expertise That Delivers</h2>
+    <div class="grid md:grid-cols-3 gap-10 text-left">
+      <div>
+        <h3 class="text-xl font-semibold mb-2">Strategy & Advisory</h3>
+        <p>We empower organizations to align objectives and navigate transformation with deep industry knowledge and tech insight.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-2">Implementation & Integration</h3>
+        <p>ZLG delivers robust, scalable, user-centric systems and handles end-to-end deployments for smooth integration.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-2">Cyber & Compliance</h3>
+        <p>ZLGs' cyber services protect your business from threats, ensure compliance, and maintain data integrity.</p>
+      </div>
+    </div>
+    <div class="mt-10">
+      <a href="services.html" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-6 rounded transition">View All Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- Nebula -->
+<section class="animate-fade py-24 px-6 bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white text-center" id="nebula">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-4xl font-bold mb-6">Nebula: The Adaptive Ops Platform</h2>
+    <p class="text-lg text-gray-300 mb-12">Built for digital-first teams to unify operations, insight, and results across ecommerce, services, and software ventures.</p>
+    <div class="grid md:grid-cols-3 gap-10 text-left">
+      <div>
+        <h3 class="text-xl font-bold mb-2">Composable Architecture</h3>
+        <p>Deploy only what you need — from returns and billing to alerts and reports.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold mb-2">Plug-in Ecosystem</h3>
+        <p>Native integrations for Shopify, Stripe, Slack, and Airtable.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold mb-2">Proactive Ops Layer</h3>
+        <p>Built-in alerts, workflows, and nudges help you act before bottlenecks arise.</p>
+      </div>
+    </div>
+    <div class="mt-12">
+      <a class="inline-block bg-indigo-500 hover:bg-indigo-600 text-white py-3 px-8 rounded text-lg transition"
+         href="https://calendly.com/justin-zenlock/30min" target="_blank" rel="noopener">Schedule a Demo</a>
+    </div>
+  </div>
+</section>
+
+  <!-- About -->
+<section class="animate-fade py-24 px-6 bg-slate-50 text-center" id="about">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-4xl font-bold tracking-tight mb-6">Who We Are</h2>
+    <p class="text-lg text-neutral-700">ZenLockGroup helps organizations navigate complexity through a blend of innovation, results, and strategic insight. We help modern teams build faster, smarter, and more scalable operations by combining strategic insight with agile technology delivery.</p>
+  </div>
+</section>
+  
+<section class="animate-fade py-24 px-6 bg-gradient-to-br from-indigo-50 via-white to-indigo-100 text-center" id="solara">
+  <div class="max-w-5xl mx-auto">
+  <h2 class="text-4xl font-bold mb-6 text-gray-900">Solara: The Lightweight Workspace</h2>
+<p class="text-lg text-gray-700 mb-12">Solara empowers self-steering teams to strategize, shift, and ship — without the baggage of complex platforms.</p>
+<div class="grid md:grid-cols-3 gap-10 text-left text-gray-800">
+  <div>
+    <h3 class="text-xl font-bold mb-2">Effortless Switching</h3>
+    <p>Navigate fluidly between streamlines — built for results and clarity.</p>
+  </div>
+  <div>
+    <h3 class="text-xl font-bold mb-2">Resilient Storage</h3>
+    <p>Auto-saves run locally and in real-time, keeping progress intact — even offline.</p>
+  </div>
+  <div>
+    <h3 class="text-xl font-bold mb-2">Quick Snapshots</h3>
+    <p>Export polished PDFs instantly — ideal for team syncs, updates, and handoffs.</p>
+  </div>
+</div>
+    <div class="mt-12">
+      <a class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white py-3 px-8 rounded text-lg transition"
+         href="solara.html" target="_blank" rel="noopener">Launch Solara</a>
+    </div>
+  </div>
+</section>
+
+<!-- Divider
+<div class="my-12 flex justify-center">
+  <div class="w-1/2 border-t-4 border-indigo-600 rounded-full"></div>
+</div>--> 
+
+<!-- Reports -->
+<section class="animate-fade py-24 px-6 bg-slate-50 text-center" id="reports">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-4xl font-bold tracking-tight mb-6">Reports & Insights</h2>
+    <p class="text-lg text-neutral-700 mb-12">Sharp thinking on strategy, results, policy, and platforms. Curated by ZenLock analysts.</p>
+    <div class="grid md:grid-cols-3 gap-10 text-left">
+      <div class="bg-white border rounded-lg p-6 shadow hover:shadow-md transition">
+        <h3 class="text-xl font-semibold mb-2">Speed to Scale: Bajajs' EV Push</h3>
+        <p class="text-neutral-600 text-sm mb-4">How Bajaj is redefining two-wheeler EVs for India’s dense urban markets.</p>
+        <a href="reports.html#erp-market" class="text-indigo-600 hover:text-indigo-700 font-medium hover:underline">Read All →</a>
+      </div>
+      <div class="bg-white border rounded-lg p-6 shadow hover:shadow-md transition">
+        <h3 class="text-xl font-semibold mb-2">Composable Arch in Action</h3>
+        <p class="text-neutral-600 text-sm mb-4">Why modern enterprises are replacing monoliths with modular tech stacks.</p>
+        <a href="reports.html#composable" class="text-indigo-600 hover:text-indigo-700 font-medium hover:underline">Read All →</a>
+      </div>
+      <div class="bg-white border rounded-lg p-6 shadow hover:shadow-md transition">
+        <h3 class="text-xl font-semibold mb-2">SaaS Stack Shifts in 2025</h3>
+        <p class="text-neutral-600 text-sm mb-4">How Indian enterprises are rethinking their software strategy for scale.</p>
+        <a href="reports.html#ai-ops" class="text-indigo-600 hover:text-indigo-700 font-medium hover:underline">Read All →</a>
+      </div>
+    </div>
+  </div>
+</section>
+  
+  <section class="animate-fade py-24 px-6 bg-gradient-to-br from-white via-slate-50 to-indigo-50 text-center" id="aether">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-4xl font-bold mb-6 text-gray-900">Aether: The Strategic Intelligence Layer</h2>
+    <p class="text-lg text-gray-700 mb-12">Designed for leadership to distill signals, align metrics, and drive decisions with full-context clarity.</p>
+    <div class="grid md:grid-cols-3 gap-10 text-left text-gray-800">
+      <div>
+        <h3 class="text-xl font-bold mb-2">Narrative-First Metrics</h3>
+        <p>Unify KPIs across ops, finance, and product — all in one strategic lens.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold mb-2">Early-Warning Signals</h3>
+        <p>Detect trends and anomalies — from churn risk to margin leakage.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold mb-2">Decision Traceability</h3>
+        <p>Track not just what was decided, but why — enabling institutional learning.</p>
+      </div>
+    </div>
+    <div class="mt-12">
+      <a class="inline-block bg-indigo-500 hover:bg-indigo-600 text-white py-3 px-8 rounded text-lg transition"
+         href="https://calendly.com/justin-zenlock/30min" target="_blank" rel="noopener">Schedule a Demo</a>
+    </div>
+  </div>
+</section>
+
+<!-- Careers -->
+<section class="animate-fade py-24 px-6 bg-[#F9FAFB] text-center" id="careers">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-4xl font-bold tracking-tight mb-6">Join Us</h2>
+    <p class="text-lg text-neutral-700 mb-12">We’re on the lookout for curious minds and result-first thinkers who thrive at the intersection of strategy, tech, and impact.</p>
+    <div class="grid md:grid-cols-3 gap-10 text-left">
+      <div>
+        <h3 class="text-xl font-semibold mb-2">Strategy Consultant</h3>
+        <p>Lead digital transformation programs with a sharp focus on outcomes, value creation, and business model evolution.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-2">Tech Architect</h3>
+        <p>Design scalable systems and integrations across systems, cloud-native services, and composable stacks.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-2">Product Analyst</h3>
+        <p>Turn technical insights into action across user behavior, product telemetry, and platform-led workflows.</p>
+      </div>
+    </div>
+    <div class="mt-10">
+      <a href="careers.html" class="inline-block bg-slate-800 hover:bg-slate-900 text-white py-2 px-6 rounded transition">View Open Roles</a>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="animate-fade py-24 px-6 bg-black text-white text-center" id="contact">
+  <div class="max-w-3xl mx-auto">
+    <h2 class="text-3xl font-bold mb-4">Ready to Transform Your Business?</h2>
+    <p class="text-gray-300 mb-6">Whether it’s strategy, system design, or product growth — we’re ready to collaborate.</p>
+    <a href="https://calendly.com/justin-zenlock/30min" target="_blank" rel="noopener"
+       class="bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-6 rounded transition inline-block">
+       Let's Begin
+    </a>
+  </div>
+</section>
+
+<section class="animate-fade py-16 bg-slate-50 w-full overflow-hidden">
+  <h2 class="text-3xl text-black font-semibold mb-10 text-center px-4">How We Work</h2>
+  <div class="hide-scrollbar overflow-x-hidden">
+    <div class="flex w-max animate-scroll-left">
+      <div class="flex">
+        <div class="faq-slide">
+  <h3>What does ZenLockGroup focus on?</h3>
+  <p>We design scalable tools—custom and templatized—to address multifaceted business challenges shaped by evolving variables.</p>
+</div>
+
+<div class="faq-slide">
+  <h3>How does a typical engagement begin?</h3>
+  <p>Every engagement starts with a discovery phase, where we align on goals, challenges, and define the scope collaboratively.</p>
+</div>
+
+<div class="faq-slide">
+  <h3>What technologies do you use?</h3>
+  <p>Our stack evolves with client needs—from cloud-native and AI-driven tools to enterprise-grade platforms.</p>
+</div>
+
+<div class="faq-slide">
+  <h3>How do you handle compliance?</h3>
+  <p>Compliance is embedded by design—across infrastructure, data, and workflows—aligned with global standards.</p>
+</div>
+
+<div class="faq-slide">
+  <h3>Do you support legacy systems?</h3>
+  <p>Yes. We specialize in bridging legacy platforms with modern architectures to ensure continuity and innovation.</p>
+</div>
+
+<div class="faq-slide">
+  <h3>What clients do you work with?</h3>
+  <p>We partner with high-growth startups, mid-market leaders, and global enterprises across industries.</p>
+</div>
+
+<div class="faq-slide">
+  <h3>Do you offer managed services?</h3>
+  <p>Absolutely. We offer comprehensive managed services that include proactive monitoring, and regular system updates.</p>
+</div>
+      </div>
+      <div class="flex">
+        <div class="faq-slide">
+  <h3>What does ZenLockGroup focus on?</h3>
+  <p>We design scalable tools—custom and templatized—to address multifaceted business challenges shaped by evolving variables.</p>
+</div>
+
+<div class="faq-slide">
+  <h3>How does a typical engagement begin?</h3>
+  <p>Every engagement starts with a discovery phase, where we align on goals, challenges, and define the scope collaboratively.</p>
+</div>
+
+<div class="faq-slide">
+  <h3>What technologies do you use?</h3>
+  <p>Our stack evolves with client needs—from cloud-native and AI-driven tools to enterprise-grade platforms.</p>
+</div>
+
+<div class="faq-slide">
+  <h3>How do you handle compliance?</h3>
+  <p>Compliance is embedded by design—across infrastructure, data, and workflows—aligned with global standards.</p>
+</div>
+
+<div class="faq-slide">
+  <h3>Do you support legacy systems?</h3>
+  <p>Yes. We specialize in bridging legacy platforms with modern architectures to ensure continuity and innovation.</p>
+</div>
+
+<div class="faq-slide">
+  <h3>What clients do you work with?</h3>
+  <p>We partner with high-growth startups, mid-market leaders, and global enterprises across industries.</p>
+</div>
+
+<div class="faq-slide">
+  <h3>Do you offer managed services?</h3>
+  <p>Absolutely. We offer comprehensive managed services that include proactive monitoring, and regular system updates.</p>
+</div>
+    </div>
+  </div>
+</section>
+
+<style>
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-scroll-left {
+  animation: scroll-left 130s linear infinite;
+}
+</style>
+
+
+<!-- Sticky Contact Button -->
+<a class="fixed bottom-6 right-6 z-50 bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-5 rounded-full shadow-lg transition-all duration-300"
+   href="https://calendly.com/justin-zenlock/30min" target="_blank" rel="noopener">Contact Us</a>
+
+<!-- Footer -->
+<footer class="bg-[#F9FAFB] text-neutral-700 text-center py-12 border-t border-gray-200">
+  <p class="text-xs text-neutral-400 mt-10">© 2025 ZenLockGroup. All rights reserved.</p>
+</footer>
+
+<!-- Animations -->
+<script src="zenlockgroup-script.js"></script>
+</body>
+</html>
